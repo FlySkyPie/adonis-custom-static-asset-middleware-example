@@ -23,3 +23,11 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.get('/', async () => {
   return { hello: 'world' }
 })
+
+/**
+ * To avoid "E_ROUTE_NOT_FOUND"
+ */
+Route.get('*', async ({response}) => {
+  response.status(404);
+})
+

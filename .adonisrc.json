@@ -12,6 +12,12 @@
     "Database": "database",
     "Contracts": "contracts"
   },
+  "metaFiles": [
+    {
+      "pattern": "public/**",
+      "reloadServer": false
+    }
+  ],
   "preloads": [
     "./start/routes",
     "./start/kernel"
